@@ -1,0 +1,190 @@
+{
+    "names":[
+        "cute_apple_id1",
+        "cute_apple_id2",
+        "cute_banana",
+        "cute_plant_in_corner",
+        "cute_chair_id1",
+        "cute_chair_id2",
+        "cute_floor",
+        "cute_table",
+        "cute_walls",
+        "cute_plate_id1",
+        "cute_plate_id2",
+        "cute_sofa",
+        "cute_picture",
+        "cute_pic_1",
+        "cute_pic_2",
+        "cute_pic_3",
+        "cute_door_locker",
+        "cute_doorbox",
+        "cute_shelf",
+        "cute_bookshelf",
+        "cute_plant_on_shelf_bot",
+        "cute_plant_on_shelf_top",
+        "cute_plant_on_table_bot",
+        "cute_plant_on_table_top",
+        "cute_roof",
+        "cute_lamp"
+    ],
+
+    "cute_roof":{
+        "name":"cute_roof",
+        "texture_name": "cute_roof.png",
+        "cull_face": false
+    },
+
+    "cute_lamp":{
+        "name":"cute_lamp",
+        "texture_name": "cute_lamp.jpg",
+        "cull_face": false
+    },
+
+    "cute_sofa":{
+        "name":"cute_sofa",
+        "texture_name": "cute_sofa.jpg",
+        "cull_face": false
+    },
+
+    "cute_picture":{
+        "name":"cute_picture",
+        "texture_name": "erde.jpg",
+        "cull_face": false
+    },
+
+    "cute_pic_1":{
+        "name":"cute_pic_1",
+        "texture_name": "cute_pic_1.jpg",
+        "cull_face": false
+    },
+    "cute_pic_2":{
+        "name":"cute_pic_2",
+        "texture_name": "cute_pic_2.jpg",
+        "cull_face": false
+    },
+    "cute_pic_3":{
+        "name":"cute_pic_3",
+        "texture_name": "cute_pic_3.jpg",
+        "cull_face": false
+    },
+
+    "cute_apple_id1":{
+        "name":"cute_apple_id1",
+        "texture_name": "cute_apple.png",
+        "cull_face": false
+    },
+
+    "cute_apple_id2":{
+        "name":"cute_apple_id2",
+        "texture_name": "cute_apple.png",
+        "cull_face": false
+    },
+
+    "cute_bookshelf":{
+        "name":"cute_bookshelf",
+        "texture_name": "cute_bookshelf.jpg",
+        "cull_face": false
+    },
+
+    "cute_banana":{
+        "name":"cute_banana",
+        "texture_name": "cute_banana.jpg",
+        "cull_face": false
+    },
+
+    "cute_chair_id1":{
+        "name":"cute_chair_id1",
+        "texture_name": "cute_chair.jpg",
+        "cull_face": true
+    },
+
+    "cute_chair_id2":{
+        "name":"cute_chair_id2",
+        "texture_name": "cute_chair.jpg",
+        "cull_face": true
+    },
+
+    "cute_door_locker":{
+        "name":"cute_door_locker",
+        "texture_name": "cute_door_locker.png",
+        "cull_face": false
+    },
+
+    "cute_doorbox":{
+        "name":"cute_doorbox",
+        "texture_name": "cute_door.jpg",
+        "cull_face": false
+    },
+
+    "cute_floor":{
+        "name":"cute_floor",
+        "texture_name": "carpet_1.jpg",
+        "cull_face": false
+    },
+
+    "cute_heater":{
+        "name":"cute_heater",
+        "texture_name": "",
+        "cull_face": false
+    },
+
+    "cute_plant_in_corner":{
+        "name":"cute_plant_in_corner",
+        "texture_name": "cute_plant_in_corner.png",
+        "cull_face": true
+    },
+
+    "cute_plant_on_shelf_bot":{
+        "name":"cute_plant_on_shelf_bot",
+        "texture_name": "cute_plant_bot.jpg",
+        "cull_face": false
+    },
+
+    "cute_plant_on_shelf_top":{
+        "name":"cute_plant_on_shelf_top",
+        "texture_name": "cute_plant_top.jpg",
+        "cull_face": true
+    },
+
+    "cute_plant_on_table_bot":{
+        "name":"cute_plant_on_table_bot",
+        "texture_name": "cute_plant_bot.jpg",
+        "cull_face": false
+    },
+
+    "cute_plant_on_table_top":{
+        "name":"cute_plant_on_table_top",
+        "texture_name": "cute_plant_top.jpg",
+        "cull_face": true
+    },
+
+    "cute_plate_id1":{
+        "name":"cute_plate_id1",
+        "texture_name": "cute_plate.png",
+        "cull_face": true
+    },
+
+    "cute_plate_id2":{
+        "name":"cute_plate_id2",
+        "texture_name": "cute_plate.png",
+        "cull_face": true
+    },
+
+    "cute_shelf":{
+        "name":"cute_shelf",
+        "texture_name": "cute_shelf.jpg",
+        "cull_face": false
+    },
+
+    "cute_table":{
+        "name":"cute_table",
+        "texture_name": "cute_table.png",
+        "cull_face": false
+    },
+
+    "cute_walls":{
+        "name":"cute_walls",
+        "texture_name": "cute_walls.jpg",
+        "cull_face": false
+    }
+}
