@@ -1,13 +1,17 @@
 import os
-from OpenGL.GL import (glDeleteShader, glCreateShader, glShaderSource, 
-glCompileShader, glGetShaderiv, GL_COMPILE_STATUS, GL_TRUE, glGetShaderInfoLog)
+from OpenGL.GL import (glDeleteShader, glCreateShader, glShaderSource,
+                       glCompileShader, glGetShaderiv, GL_COMPILE_STATUS,
+                       GL_TRUE, glGetShaderInfoLog)
 from OpenGL.error import NullFunctionError
+
 
 class Shader:
     def __init__(self, sourcePath, shaderType):
         self.__shaderId = 0
         if not os.path.exists(sourcePath):
-            raise RuntimeError(f'Shader source file {sourcePath} does not exists.')
+            raise RuntimeError(
+                f'Shader source file {sourcePath} does not exists.'
+            )
         self.__sourcePath = sourcePath
         self.shaderType = shaderType
 

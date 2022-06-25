@@ -1,6 +1,7 @@
-import sys
-from OpenGL.GL import (glGenFramebuffers, glBindFramebuffer, GL_FRAMEBUFFER, glDeleteFramebuffers)
+from OpenGL.GL import (glGenFramebuffers, glBindFramebuffer,
+                       GL_FRAMEBUFFER, glDeleteFramebuffers)
 from OpenGL.error import NullFunctionError
+
 
 class Framebuffer:
     def create(self, buffer):
@@ -14,7 +15,7 @@ class Framebuffer:
 
     def unbind(self):
         glBindFramebuffer(GL_FRAMEBUFFER, 0)
-    
+
     def __del__(self):
         self.delete()
 

@@ -2,6 +2,7 @@ from pyrr import vector, vector3
 from math import sin, cos, radians
 import glm
 
+
 class Camera:
     def __init__(self):
         self.camera_pos = glm.vec3(0.0, 2.5, 0.0)
@@ -38,17 +39,30 @@ class Camera:
         front.z = sin(radians(self.jaw)) * cos(radians(self.pitch))
 
         self.camera_front = vector.normalise(front)
-        self.camera_right = vector.normalise(vector3.cross(self.camera_front, glm.vec3(0.0, 1.0, 0.0)))
-        self.camera_up = vector.normalise(vector3.cross(self.camera_right, self.camera_front))
+        self.camera_right = vector.normalise(
+            vector3.cross(
+                self.camera_front,
+                glm.vec3(0.0, 1.0, 0.0)
+            )
+        )
+        self.camera_up = vector.normalise(
+            vector3.cross(
+                self.camera_right,
+                self.camera_front
+            )
+        )
 
     # Camera method for the WASD movement
     def process_keyboard(self, direction, velocity):
         if direction == "FORWARD":
             self.camera_pos += self.camera_front * velocity
+
         if direction == "BACKWARD":
             self.camera_pos -= self.camera_front * velocity
+
         if direction == "LEFT":
             self.camera_pos -= self.camera_right * velocity
+
         if direction == "RIGHT":
             self.camera_pos += self.camera_right * velocity
 

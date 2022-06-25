@@ -1,10 +1,11 @@
 import glm
-from OpenGL.GL import (glCreateProgram, glAttachShader, glLinkProgram, 
-glGetProgramiv, GL_LINK_STATUS, GL_TRUE, glGetProgramInfoLog, glDeleteProgram, 
-glUseProgram, glGetAttribLocation, glGetUniformLocation, glUniform1i, glUniform1f, 
-glUniform2fv, glUniform3fv, glUniform4fv, glUniformMatrix2fv, glUniformMatrix3fv, 
-glUniformMatrix4fv, GL_FALSE)
+from OpenGL.GL import (glCreateProgram, glAttachShader, glLinkProgram,
+                       glGetProgramiv, GL_LINK_STATUS, GL_TRUE, glGetProgramInfoLog, glDeleteProgram,
+                       glUseProgram, glGetAttribLocation, glGetUniformLocation, glUniform1i, glUniform1f,
+                       glUniform2fv, glUniform3fv, glUniform4fv, glUniformMatrix2fv, glUniformMatrix3fv,
+                       glUniformMatrix4fv, GL_FALSE)
 from OpenGL.error import NullFunctionError
+
 
 class Program:
     def __init__(self):
@@ -69,10 +70,25 @@ class Program:
         glUniform4fv(self.getUniformLocation(name), 1, glm.value_ptr(vec))
 
     def setMat2(self, name, mat):
-        glUniformMatrix2fv(self.getUniformLocation(name), 1, GL_FALSE, glm.value_ptr(mat))
+        glUniformMatrix2fv(
+            self.getUniformLocation(name),
+            1,
+            GL_FALSE,
+            glm.value_ptr(mat)
+        )
 
     def setMat3(self, name, mat):
-        glUniformMatrix3fv(self.getUniformLocation(name), 1, GL_FALSE, glm.value_ptr(mat))
+        glUniformMatrix3fv(
+            self.getUniformLocation(name),
+            1,
+            GL_FALSE,
+            glm.value_ptr(mat)
+        )
 
     def setMat4(self, name, mat):
-        glUniformMatrix4fv(self.getUniformLocation(name), 1, GL_FALSE, glm.value_ptr(mat))
+        glUniformMatrix4fv(
+            self.getUniformLocation(name),
+            1,
+            GL_FALSE,
+            glm.value_ptr(mat)
+        )

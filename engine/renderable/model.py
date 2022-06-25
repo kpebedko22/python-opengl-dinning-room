@@ -1,6 +1,9 @@
-import os, json, glm
+import os
+import json
+import glm
 import numpy as np
-from engine.renderable.mesh import Mesh 
+from engine.renderable.mesh import Mesh
+
 
 class Model:
     def __init__(self, path):
@@ -10,7 +13,7 @@ class Model:
         self.path = path
         self.model = glm.mat4(1.0)
         data = self.__loadAndGetData()
-        
+
         for name in data["names"]:
             self.meshes.append(Mesh(data[name]))
 
